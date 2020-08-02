@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo Creating sku110k venv and installing packages
+cd sku110k
+python3 -m venv env
+source env/bin/activate
+pip install numpy==1.16.3
+pip install -r requirements.txt
+echo Creating retail-product-classifier venv and installing packages
+pip3.8 install --upgrade pip
+cd ../
+cd retail-product-classifier-server
+python3.8 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+echo Creating encoder venv and installing packages
+cd ../
+cd encoder
+python3.8 -m venv env
+source env/bin/activate
+pip install -r requirements.txt

@@ -2,7 +2,7 @@ version: '3'
 
 services:
   rpcserver:
-    image: rpcserver
+    image: rpc/server:v0.0.1
     volumes:
       - .:/opt/rpcserver
     build:
@@ -10,3 +10,4 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - 127.0.0.1:5000:5000
+      - 0.0.0.0:5000:5000
