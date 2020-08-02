@@ -24,11 +24,16 @@ RUN cd /opt &&\
     cd rpcserver/retail-product-classifier-server &&\
     python3.8 -m venv env &&\
     /bin/bash -c "source env/bin/activate" &&\
-    pip3.8 install -r requirements.txt &&\
+    pip install -r requirements.txt &&\
     cd ../ &&\
     cd sku110k &&\
     python3 -m venv env &&\
     /bin/bash -c "source env/bin/activate" &&\
     pip3 install numpy==1.16.3 &&\
-    pip3 install -r requirements.txt
+    pip3 install -r requirements.txt &&\
+    cd ../ &&\
+    cd encoder &&\
+    python3.8 -m venv env &&\
+    /bin/bash -c "source env/bin/activate" &&\
+    pip install -r requirements.txt
 
