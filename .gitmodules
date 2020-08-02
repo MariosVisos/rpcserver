@@ -1,0 +1,9 @@
+[submodule "retail-product-classifier-server"]
+	path = retail-product-classifier-server
+	url = git@github.com:MariosVisos/retail-product-classifier-server.git
+[submodule "sku110k"]
+	path = sku110k
+	url = git@github.com:MariosVisos/sku110k.git
+[submodule "encoder"]
+	path = encoder
+	url = git@github.com:MariosVisos/encoder.git
