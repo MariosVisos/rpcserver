@@ -5,9 +5,11 @@ services:
     image: rpc/server:v0.0.1
     volumes:
       - .:/opt/rpcserver
+      - /opt/rpcserver/encoder/env
+      - /opt/rpcserver/retail-product-classifier-server/env
+      - /opt/rpcserver/sku110k/env
     build:
       context: .
       dockerfile: ./Dockerfile
     ports:
-      - 127.0.0.1:5000:5000
       - 0.0.0.0:5000:5000
